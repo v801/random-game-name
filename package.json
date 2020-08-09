@@ -1,0 +1,32 @@
+{
+  "name": "random-game-name",
+  "version": "1.0.0",
+  "description": "Get a random video game name",
+  "main": "index.js",
+  "bin": "cli.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest --verbose"
+  },
+  "author": {
+    "name": "v801"
+  },
+  "license": "Unlicense",
+  "keywords": [
+    "random",
+    "video games",
+    "video game",
+    "generator",
+    "funny"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/v801/random-game-name.git"
+  },
+  "devDependencies": {
+    "jest": "^26.2.2"
+  },
+  "dependencies": {
+    "meow": "^7.0.1",
+    "random-item": "^3.0.0"
+  }
+}
