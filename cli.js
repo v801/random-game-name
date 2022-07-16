@@ -2,28 +2,22 @@
 
 'use strict'
 
-import meow from 'meow'
-import randomGameName from './index.js'
+const randomGameName = require('./')
+const { Command } = require('commander');
+const program = new Command();
 
-const cli = meow(`
-  Usage
-    $ random-game-name
+program
+  .name('random-game-name')
+  .description('Get a random video game name.')
+  .version('1.0.1')
+  .action(() => {
+    console.log(randomGameName());
+  });
 
-  Options
-    --random, -r  Get a random video game name
+// program.command('')
+//   .description('fuck you')
+//   .action((str, options) => {
+//     console.log(randomGameName());
+//   });
 
-  Examples
-    $ random-game-name
-    Inept Caveman Overload
-`, {
-  importMeta: import.meta,
-  flags: {
-    random: {
-      type: 'boolean',
-      default: true,
-      alias: 'r'
-    }
-  }
-})
-
-console.log(randomGameName())
+program.parse();

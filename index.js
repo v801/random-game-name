@@ -2,20 +2,18 @@
 
 'use strict'
 
-import randomItem from 'random-item';
-import { readFile } from 'fs/promises';
-const videoGameList = JSON.parse(
-  await readFile(
-    new URL('./videoGameList.json', import.meta.url)
-  )
-);
+const videoGameList = require('./videoGameList.json')
 
-const randomFirstWord = randomItem(videoGameList.first)
-const randomSecondWord = randomItem(videoGameList.second)
-const randomThirdWord = randomItem(videoGameList.third)
+function getRandom (list) {
+  return list[Math.floor((Math.random()*list.length))];
+}
+
+const randomFirstWord = getRandom(videoGameList.first)
+const randomSecondWord = getRandom(videoGameList.second)
+const randomThirdWord = getRandom(videoGameList.third)
 
 const randomGameName = () => {
   return `${randomFirstWord} ${randomSecondWord} ${randomThirdWord}`
 }
 
-export default randomGameName
+module.exports = randomGameName
