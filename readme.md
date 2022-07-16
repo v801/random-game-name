@@ -1,10 +1,9 @@
 # random game name
 
-[![travis build](https://img.shields.io/travis/v801/random-game-name.svg?style=flat-square)](https://travis-ci.org/v801/random-game-name)
-[![dependencies Status](https://david-dm.org/v801/random-game-name/status.svg)](https://david-dm.org/v801/random-game-name)
+[![v801](https://circleci.com/gh/v801/random-game-name.svg?style=shield)](https://app.circleci.com/pipelines/github/v801/random-game-name)
 [![Unlicense](https://img.shields.io/badge/unlicense-oh%20yeah-blue.svg?style=flat-square)](http://unlicense.org)
 
-> Get a random ass video game name
+> Get a random video game name
 >
 > Inspired by [videogamena.me](http://videogamena.me)
 
@@ -13,7 +12,7 @@ The names are generated from a [JSON file](videoGameList.json).
 ## Install
 
 ```
-$ npm install --save v801/random-game-name
+$ npm i --save v801/random-game-name
 ```
 
 ## Usage
@@ -40,15 +39,12 @@ $ npm install -g v801/random-game-name
 ```
 
 ```
-$ random-game-name --help
+$ random-game-name
 
   Get a random video game name
 
   usage
     $ random-game-name
-
-  Options
-    --random, -r  Get a random video game name
 
   Examples
     $ random-game-name
