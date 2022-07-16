@@ -39,7 +39,7 @@ $ npm install -g v801/random-game-name
 ```
 
 ```
-$ random-game-name
+$ random-game-name help
 
   Get a random video game name
 
