@@ -2,8 +2,8 @@
 
 'use strict'
 
-const meow = require('meow')
-const randomGameName = require('./')
+import meow from 'meow'
+import randomGameName from './index.js'
 
 const cli = meow(`
   Usage
@@ -16,6 +16,7 @@ const cli = meow(`
     $ random-game-name
     Inept Caveman Overload
 `, {
+  importMeta: import.meta,
   flags: {
     random: {
       type: 'boolean',

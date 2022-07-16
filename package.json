@@ -4,8 +4,9 @@
   "description": "Get a random video game name",
   "main": "index.js",
   "bin": "cli.js",
+  "type": "module",
   "scripts": {
-    "test": "./node_modules/.bin/jest --verbose"
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest --verbose"
   },
   "author": {
     "name": "v801"
@@ -23,10 +24,10 @@
     "url": "git://github.com/v801/random-game-name.git"
   },
   "devDependencies": {
-    "jest": "^26.2.2"
+    "jest": "^28.1.3"
   },
   "dependencies": {
-    "meow": "^7.0.1",
-    "random-item": "^3.0.0"
+    "meow": "^10.1.3",
+    "random-item": "^4.0.1"
   }
 }

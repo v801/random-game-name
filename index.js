@@ -1,7 +1,14 @@
+#!/usr/bin/env node
+
 'use strict'
 
-const randomItem = require('random-item')
-const videoGameList = require('./videoGameList.json')
+import randomItem from 'random-item';
+import { readFile } from 'fs/promises';
+const videoGameList = JSON.parse(
+  await readFile(
+    new URL('./videoGameList.json', import.meta.url)
+  )
+);
 
 const randomFirstWord = randomItem(videoGameList.first)
 const randomSecondWord = randomItem(videoGameList.second)
@@ -11,4 +18,4 @@ const randomGameName = () => {
   return `${randomFirstWord} ${randomSecondWord} ${randomThirdWord}`
 }
 
-module.exports = randomGameName
+export default randomGameName
