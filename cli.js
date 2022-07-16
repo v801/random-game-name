@@ -14,10 +14,4 @@ program
     console.log(randomGameName());
   });
 
-// program.command('')
-//   .description('fuck you')
-//   .action((str, options) => {
-//     console.log(randomGameName());
-//   });
-
 program.parse();
