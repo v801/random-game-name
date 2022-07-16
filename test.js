@@ -2,7 +2,7 @@
 
 'strict'
 
-import randomGameName from './index.js'
+const randomGameName = require('./index.js');
 
 test('returns a string', () => {
   expect(typeof randomGameName()).toBe('string')
