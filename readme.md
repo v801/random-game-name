@@ -1,6 +1,6 @@
 # random game name
 
-[![v801](https://circleci.com/gh/v801/random-game-name.svg?style=shield)](https://app.circleci.com/pipelines/github/v801/random-game-name)
+[![v801](https://img.shields.io/circleci/build/gh/v801/random-game-name/main?style=flat-square)](https://app.circleci.com/pipelines/github/v801/random-game-name)
 [![Unlicense](https://img.shields.io/badge/unlicense-oh%20yeah-blue.svg?style=flat-square)](http://unlicense.org)
 
 > Get a random video game name
