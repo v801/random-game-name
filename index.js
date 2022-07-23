@@ -5,7 +5,7 @@
 const videoGameList = require('./videoGameList.json')
 
 function getRandom (list) {
-  return list[Math.floor((Math.random()*list.length))];
+  return list[Math.floor((Math.random()*list.length))]
 }
 
 const randomGameName = () => {
